@@ -35,6 +35,8 @@ app.get('/get-autos', async (req, res) => {
       }
 })
 
+//esto vamos a usar
+
 app.post('/crear-auto', async (req, res) => {
     try {
         const nuevoAuto = await prisma.auto.create({
